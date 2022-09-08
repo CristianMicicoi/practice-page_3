@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica,Arial,sans-serif;
+    background-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*---------------------------- Header ----------------------*/
+
+header {
+    background-color: #000;
+    height: 70px;
+}
+
+.header__content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    
+}
+
+.logo_Spotify {
+    padding-top: 5px;
+}
+
+.nav {
+    display: flex;
+    color: #fff;
+    gap: 30px;
+    list-style: none;
+    font-weight: 600;
+}
+
+.nav a:hover {
+    color: #1ed760;
+}
+
+.nav__link {
+    
+}
+
+.nav__link--grey {
+    color: #d9dadc;
+}
+
+/*----------------------- Section: subscription ----------------------*/
+
+h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+    width: auto;
+    padding-top: 30px;
+
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.4px;
+    margin-top: 30px;
+}
+
+p {
+    color: white;
+}
+
+.subscription-section {
+    background-color: rgb(153, 51, 153);
+}
+
+.subscription__container {
+    display: flex;
+    padding: 24px 15px 0 15px
+}
+
+.subscription__content {
+    margin-right: 32px;
+    padding-bottom: 72px;
+    text-align: left;
+}
+
+.subscription__buttons {
+    margin-top: 35px;
+}
+
+.button {
+    color: white;
+    background-color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    border-radius: 500px;
+    border: 2px solid rgb(25, 20, 20);
+    padding: 14px 32px;
+    margin-right: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    outline-offset: 3px;
+    outline-width: 2px;
+    transition: outline 500ms ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button:active {
+
+}
+
+.button:focus {
+    outline: solid black;
+    transition: outline 150ms ease-in-out;
+}
+
+.button--outlined {
+    background-color:#99339D;
+    border: 2px solid white;
+}
+
+.button--outlined:hover {
+    background-color: #862D86;
+    transition: outline 150ms ease-in-out;
+}
+
+.button--outlined:active {
+    background-color: #862D86;
+}
+
+.button--outlined:focus {
+    background-color: #862D86;
+    outline: solid black;
+}
+
+.subscription__paragraph {
+    margin-top: 40px;
+    font-size: 0.6875rem;
+    line-height: 1rem;
+    max-width: 600px;
+}
+
+.subscription__paragraph a {
+    text-decoration: underline;
+}
+
+.subscription__image {
+    height: 404px;
+}
+
+/*---------------------- Section: premium -------------------------*/
+
+.premium-section {
+    background-color: #ffffff;
+}
+
+.premium-section h2 {
+    color: #000;
+    margin-bottom: 72px;
+}
+
+.container {
+
+}
+
+.premium__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.premium__content {
+    
+}
+
+.premium__image {
+    width: 124px;
+    height: 124px;    
+}
+
+.premium__paragraph--container p {
+    color: #000;
+    text-align: center;
+    padding-top: 10px;
+}
