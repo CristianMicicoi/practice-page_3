@@ -73,7 +73,6 @@ h1 {
 }
 
 h2 {
-    color: white;
     font-size: 24px;
     font-weight: 500;
     line-height: 1.4;
@@ -81,11 +80,8 @@ h2 {
     margin-top: 30px;
 }
 
-p {
+.subscription__section {
     color: white;
-}
-
-.subscription-section {
     background-color: rgb(153, 51, 153);
 }
 
@@ -124,10 +120,6 @@ p {
 
 .button:hover {
     transform: scale(1.05);
-}
-
-.button:active {
-
 }
 
 .button:focus {
@@ -171,40 +163,108 @@ p {
 
 /*---------------------- Premium section -------------------------*/
 
-.premium-section {
+.premium__section {
+    color: black;
     background-color: #ffffff;
+    padding: 75px 15px;
 }
 
-.premium-section h2 {
-    color: #000;
-    margin-bottom: 72px;
+.premium__section h2 {
+    margin: 0 235px 72px 235px;
     font-size: 40px;
     font-weight: 700;
-    letter-spacing: -2px;
+    letter-spacing: -2.5px;
     line-height: 48px;
     text-align: center;
 }
 
 .container {
-
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .premium__container {
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .premium__content {
-    
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .premium__image {
     width: 124px;
-    height: 124px;    
+    height: 124px;
+    margin: 0 72px 40px 72px;
 }
 
-.premium__paragraph--container p {
+.premium__paragraph--container {
+    margin: 16px 0;
+}
+
+.premium__title {
+    margin-bottom: 10px;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+.premium__description {
+    margin: 0 21px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*-------------------------- Plans section ---------------------------*/
+
+.plans__section {
+    background-color: #efefef;
+}
+
+.plans__container {
+
+}
+
+.plans__title {
+
+}
+
+.card__container {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    border: solid red 2px;
+}
+
+.card__badge {
+
+}
+
+.hr {
+    
+    border: solid 0.5px rgb(204, 204, 204);
+    margin: auto 0px 0px;
+}
+
+.check__sign {
+    display: flex;
+}
+
+.card__button {
+
+}
+
+.card__footer {
+
+}
+
+.card__footer--a {
     color: #000;
-    text-align: center;
-    padding-top: 10px;
+    text-decoration: underline;
 }
