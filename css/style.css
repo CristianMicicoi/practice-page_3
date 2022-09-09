@@ -60,7 +60,7 @@ header {
     color: #d9dadc;
 }
 
-/*----------------------- Section: subscription ----------------------*/
+/*----------------------- Subscription section ----------------------*/
 
 h1 {
     color: white;
@@ -169,7 +169,7 @@ p {
     height: 404px;
 }
 
-/*---------------------- Section: premium -------------------------*/
+/*---------------------- Premium section -------------------------*/
 
 .premium-section {
     background-color: #ffffff;
@@ -178,6 +178,11 @@ p {
 .premium-section h2 {
     color: #000;
     margin-bottom: 72px;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    line-height: 48px;
+    text-align: center;
 }
 
 .container {
