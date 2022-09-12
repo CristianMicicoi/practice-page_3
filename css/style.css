@@ -6,7 +6,7 @@
 
 body {
     font-family: Helvetica,Arial,sans-serif;
-    background-color: transparent;
+    background-color: black;
 }
 
 a {
@@ -83,6 +83,8 @@ h2 {
 .subscription__section {
     color: white;
     background-color: rgb(153, 51, 153);
+    margin-top: 15px;
+    padding-top: 48px;
 }
 
 .subscription__container {
@@ -109,7 +111,7 @@ h2 {
     border-radius: 500px;
     border: 2px solid rgb(25, 20, 20);
     padding: 14px 32px;
-    margin-right: 8px;
+    gap: 10px;
     cursor: pointer;
     text-transform: uppercase;
     text-align: center;
@@ -120,6 +122,7 @@ h2 {
 
 .button:hover {
     transform: scale(1.05);
+    outline-offset: 2px;
 }
 
 .button:focus {
@@ -226,34 +229,91 @@ h2 {
 }
 
 .plans__container {
-
+    padding: 75px 15px;
 }
 
 .plans__title {
+    text-align: center;
+}
 
+.plans__title h2 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: -1.6px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.plans__title p {
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.25rem;
+    letter-spacing: normal;
 }
 
 .card__container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 0 26px 0;
+    gap: 15px;
 }
 
 .card {
-    border: solid red 2px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 30%) 2px 1px 10px 0px;;
+    width: 270px;
+    margin-top: 50px 16px 26px 0;
+    padding: 16px;
 }
 
 .card__badge {
+    align-self: flex-start;
+    background-color: rgb(13, 114, 234);
+    color: white;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
 
 }
 
 .hr {
-    
+    color: rgb(83, 83, 83);
     border: solid 0.5px rgb(204, 204, 204);
-    margin: auto 0px 0px;
+    margin: 16px 0;
 }
 
 .check__sign {
     display: flex;
+    gap: 10px;
+    padding-bottom: 5px;
+}
+
+.check__sign p {
+    line-height: 22px;
+}
+
+.spacer {
+    flex: 1 0;
 }
 
 .card__button {
@@ -261,10 +321,133 @@ h2 {
 }
 
 .card__footer {
-
+    color: rgb(83, 83, 83);
+    margin-top: 16px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    min-height: 100px;
 }
 
-.card__footer--a {
-    color: #000;
+.card__footer p {
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    /* font-size: 12px; */
+}
+
+.card__footer a {
+    color: rgb(83, 83, 83);
     text-decoration: underline;
+}
+
+/*----------------------------------------------- Footer --------------------------------------------------*/
+
+footer {    
+    padding: 80px 0 50px;
+    color: #919496;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(0, 0, 0);
+}
+
+footer .logo_Spotify {
+    margin-top: -20px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lists {    
+    width: 17%;
+    padding: 0 15px;
+}
+
+.lists a {
+    line-height: 1.5;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.social-media a img {
+    width: 24px;
+    background-color: white;
+}
+
+.social-media a:hover img {
+    background-color: #1ed760;
+}
+
+.social-media a {
+    background-color: #222326;
+    padding: 15px;
+    border-radius: 50%;
+    line-height: 0;
+    
+}
+
+.country {
+    text-align: right;
+    font-weight: 400;
+    
+}
+
+.a-country {
+    color: #919496;
+    font-size: 12px;
+}
+
+.country a img {
+    margin-right: 8px;
+}
+
+.spacer {
+    flex: 1 0;
+}
+
+.info {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.info span {
+    display: flex;
+    align-items: center;
+}
+
+.info li {
+    display: flex;
+}
+
+.info li a {
+    color: #919496;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+footer a:hover {
+    color: #1ed760;
 }
