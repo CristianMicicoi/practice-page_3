@@ -100,6 +100,9 @@ h2 {
 
 .subscription__buttons {
     margin-top: 35px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .button {
@@ -111,24 +114,37 @@ h2 {
     border-radius: 500px;
     border: 2px solid rgb(25, 20, 20);
     padding: 14px 32px;
-    gap: 10px;
     cursor: pointer;
     text-transform: uppercase;
     text-align: center;
-    outline-offset: 3px;
-    outline-width: 2px;
-    transition: outline 500ms ease-in-out;
+    /* outline-offset: 3px; */
+    /* outline-width: 2px; */
+    /* transition: outline 500ms ease-in-out; */
 }
 
+
+
 .button:hover {
-    transform: scale(1.05);
-    outline-offset: 2px;
+     transform: scale(1.04);
 }
+
+.button:active {
+    outline: solid black;
+    outline-offset: 3px;
+    
+}
+
+.button a {
+    outline: none;
+} 
+
 
 .button:focus {
     outline: solid black;
+    outline-offset: 3px;
     transition: outline 150ms ease-in-out;
 }
+
 
 .button--outlined {
     background-color:#99339D;
@@ -147,6 +163,7 @@ h2 {
 .button--outlined:focus {
     background-color: #862D86;
     outline: solid black;
+    outline-offset: 3px;
 }
 
 .subscription__paragraph {
@@ -316,10 +333,6 @@ h2 {
     flex: 1 0;
 }
 
-.card__button {
-
-}
-
 .card__footer {
     color: rgb(83, 83, 83);
     margin-top: 16px;
@@ -335,7 +348,6 @@ h2 {
     font-size: 12px;
     font-weight: 400;
     line-height: 16px;
-    /* font-size: 12px; */
 }
 
 .card__footer a {
@@ -343,7 +355,7 @@ h2 {
     text-decoration: underline;
 }
 
-/*----------------------------------------------- Footer --------------------------------------------------*/
+/*----------------------------- Footer ---------------------------*/
 
 footer {    
     padding: 80px 0 50px;
@@ -402,14 +414,11 @@ footer .logo_Spotify {
     background-color: #222326;
     padding: 15px;
     border-radius: 50%;
-    line-height: 0;
-    
 }
 
 .country {
     text-align: right;
     font-weight: 400;
-    
 }
 
 .a-country {
